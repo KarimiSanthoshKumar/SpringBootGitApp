@@ -127,83 +127,98 @@
     object-fit: cover; /* Ensures no gaps */
   }
 </style>
+
+<script>$('.carousel').carousel({
+	  interval: 6000,
+	  pause: "true"
+	});</script>
 <%@ include file="header.jsp"%>
 
 
+<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/image/grimage.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/image/grimage1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/image/grimage2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/image/grimage3.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>  -->
 
- <div class="intro">
-	<div id="carouselExampleIndicators" class="carousel slide"
-		data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0"
-				class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="d-block w-100" src="/image/grimage.png"
-					style="height: 500px; width: 300;" alt="First slide">
-				<div class="carousel-caption d-none d-md-block"></div>
-			</div>
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#mycarousel" data-slide-to="1"></li>
+    <li data-target="#mycarousel" data-slide-to="2"></li>
+    <li data-target="#mycarousel" data-slide-to="3"></li>
+    <li data-target="#mycarousel" data-slide-to="4"></li>
+  </ol>
 
-
-			<div class="carousel-item ">
-				<img class="d-block w-100" src="/image/grimage1.png"
-					style="height: 500px; width: 100%;" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block"></div>
-			</div>
-
-
-			<div class="carousel-item">
-				<img class="d-block w-100" src="/image/grimage2.png"
-					style="height: 500px; width: 100%;" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block"></div>
-			</div>
-
-           <div class="carousel-item">
-				<img class="d-block w-100" src="/image/grimage3.png"
-					style="height: 500px; width: 100%;" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block"></div>
-			</div>
-
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators"
-			role="button" data-slide="prev"> <span
-			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-			class="sr-only">Previous</span>
-		</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
-			role="button" data-slide="next"> <span
-			class="carousel-control-next-icon" aria-hidden="true"></span> <span
-			class="sr-only">Next</span>
-		</a>
-	</div>
-</div> 
-
-<!-- <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Wrapper for slides -->
+ <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/image/headerimage1.jpg" alt="First slide">
+      <img src="/image/grimage.png" class="d-block w-100" data-color="lightblue" style="height: 500px; width: 100%;" alt="First Image">
+      <div class="carousel-caption">
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/image/bae-caiman.jpg" alt="Second slide">
+      <img src="/image/grimage1.png" class="d-block w-100"  data-color="firebrick" style="height: 500px; width: 100%;"alt="Second Image">
+      <div class="carousel-caption">
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/image/1695526505_banner.jpg" alt="Third slide">
+      <img src="/image/grimage2.png" class="d-block w-100" data-color="violet"  style="height: 500px; width: 100%;"  alt="Third Image">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/image/grimage3.png" class="d-block w-100" data-color="lightgreen" style="height: 500px; width: 100%;" alt="Fourth Image">
+      <div class="carousel-caption">
+      </div>
     </div>
   </div>
   
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div> -->
+</div>
+
 
 
 <!-- commint old code-->
@@ -243,7 +258,7 @@
 				<b>Global Runflats is an industry leading specialist, custom RUNFLAT insert manufacturer based out of Ras Al Khaimah, UAE.</b>
 			</p>
 			<p>
-				Our mission is to manufacture custom made RUNFLAT solutions and Bead Locks for 4X4, 6X6, 8X8 & other Armored, Up-Armored & Special Purpose Vehicles ranging from 3,000 – 40,000 Kilos Gross Vehicle Weight as per specific end user requirements.
+				Our mission is to manufacture custom made RUNFLAT solutions and Bead Locks for 4X4, 6X6, 8X8 & other Armored, Up-Armored & Special Purpose Vehicles ranging from 3,000 &minus; 40,000 Kilos Gross Vehicle Weight as per specific end user requirements.
 
 			<div class="contact-container1">
 			

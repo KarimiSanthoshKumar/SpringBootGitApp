@@ -151,6 +151,23 @@ body, html {
     padding-left: 10px;
     
 } */
+
+.container1 {
+    display: flex; /* Arrange image and text side by side */
+    align-items: center; /* Align them vertically */
+    gap: 20px; /* Adjust the space between image and text */
+    padding: 20px; /* Add some space around */
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+}
+
+.text-section {
+    flex: 1; /* Allow text to take remaining space */
+}
+
 </style>
 </head>
 <div class="hero-image">
@@ -171,7 +188,7 @@ body, html {
         </div>
     </div>
 
-    <div class="container1">
+    <!-- <div class="container1">
         <div class="image-section">
             <img src="/image/grimage15.jpg" alt="Precision Machinery">
         </div>
@@ -184,7 +201,23 @@ body, html {
             <h2 style="text-align:left">3. Time-Saving:</h2>
             <p style="text-align:left">You don&rsquot need to worry about finding a suitable place to change a tire or wait for roadside assistance.</p>
         </div>
+    </div> -->
+    
+    <div class="container1">
+    <div class="image-section">
+        <img src="/image/grimage15.jpg" alt="Precision Machinery">
     </div>
+    <div class="text-section">
+        <h3 style="color:red;text-align:center;"><b>Key Features</b></h3>
+        <h2 style="text-align:left">1. Convenience:</h2>
+        <p>You can continue driving to a safe location without having to stop immediately to change a tire.</p>
+        <h2 style="text-align:left">2. Safety:</h2>
+        <p>Runflat systems help prevent accidents caused by losing control of the vehicle due to a flat tire.</p>
+        <h2 style="text-align:left">3. Time-Saving:</h2>
+        <p>You don&rsquo;t need to worry about finding a suitable place to change a tire or wait for roadside assistance.</p>
+    </div>
+</div>
+    
 
     <div class="content-box1">
         <h2>Benefits</h2>

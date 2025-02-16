@@ -1,65 +1,7 @@
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ include file="header.jsp" %>
 <link rel="stylesheet" href="/css/contactUs.css">
-<%-- <div class="contact-form-container">
 
-<c:if test="${not empty successMessage}">
-    <div id="successMessage" style="color: green; font-weight: bold;">
-        ${successMessage}
-    </div>
-</c:if>
-    
-    <form id="myForm" action="./submitForm" method="POST" onsubmit="return validateForm()">
-        <div class="row">
-            <div class="col-md-6 form-group">
-                <label for="firstName">First Name</label>
-                <input id="firstName" type="text" name="firstName" size="40" maxlength="400" class="form-control required" placeholder="First Name"/>
-            </div>
-
-            <div class="col-md-6 form-group">
-                <label for="lastName">Last Name</label>
-                <input id="lastName" type="text" name="lastName" size="40" maxlength="400" class="form-control required" placeholder="Last Name"/>
-            </div>
-
-            <div class="col-md-6 form-group">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" size="40" maxlength="400" class="form-control required" placeholder="Email Address" />
-            </div>
-
-            <div class="col-md-6 form-group">
-                <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone" size="40" maxlength="400" class="form-control required" placeholder="Phone"/>
-            </div>
-
-            <div class="col-md-12 form-group">
-                <label for="sendMeyouMessage">Please choose an option</label>
-                <select id="sendMeyouMessage" name="sendMeyouMessage" class="form-control required">
-                    <option value="">Please choose an option</option>
-                    <option value="Beadlock System">Beadlock System</option>
-                    <option value="Dynamic RunFlat System">Dynamic RunFlat System</option>
-                    <option value="Military Wheels">Military Wheels</option>
-                    <option value="Security Vehicle Wheels">Security Vehicle Wheels</option>
-                    <option value="Static RunFlat System">Static RunFlat System</option>
-                </select>
-            </div>
-
-            <div class="col-md-12 form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" cols="40" rows="10" maxlength="2000" class="form-control required" placeholder="Message goes here"></textarea>
-            </div>
-
-            <div class="col-md-6 form-group">
-                <div class="row m-0 justify-content-between">
-                   <input type="button" onclick="myFunction()" value="Send Message" style="background-color: blue; color: white; border: none; padding: 10px 20px; cursor: pointer;">
-                </div>
-            </div>
-        </div>
-    </form>
-</div> --%>
-
-<!-- <div style="height: 379px; overflow: hidden;"> Define height for the container
-    <img id="imaID" src="/image/img_nature_wide.jpg" title="Runflat International" style="height: 100%; width: 100%;">
-</div> -->
 <style>
 body, html {
   height: 100%;
@@ -109,6 +51,39 @@ body, html {
   background-color: #555;
   color: white;
 }
+
+.hero-image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image/grimage5.webp");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
 </style>
 <div class="hero-image">
   <div class="hero-text">
@@ -132,7 +107,7 @@ body, html {
 						<span> Address </span>
 					</h3>
 					<ul style="list-style: none; padding: 0;">
-						<li>Plot No. 9/6/A<br> Road No. 5, Industrial Park<br>Nacharam,<br>Hyderabad, 500020.</li>
+						<li>INDUSTRIAL ZONE-FZ - S 32-28, SHED No. 32 - Al Jazeera Al Hamra-Qaryat Al Hamra - Ras Al Khaimah - United Arab Emirates<br><!-- Hyderabad, 500020. --></li>
 					</ul>
 				</div>
 			</div>
@@ -146,8 +121,8 @@ body, html {
 						<span> Call Us </span>
 					</h3>
 					<ul style="list-style: none; padding: 0;">
-						<li><a href="tel:+919959902433" style="color:red">+91 9959902433</a></li>
-						<li><a href="tel:+919704622433" style="color:red">+91 9704622433</a></li>
+						<li><a href="tel:+919959902433" style="color:red">+971 544235049</a></li>
+						<!-- <li><a href="tel:+919704622433" style="color:red">+91 9704622433</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -170,18 +145,14 @@ body, html {
 	</div>
 </div>
 
-
 <br>
-<br>
-<br>
-<div class="container2">
  <div style="text-align:center">
     <h2><strong>Contact Us</strong></h2>
     <c:if test="${not empty successMessage}">
     <div id="successMessage" style="color: green; font-weight: bold;">
         ${successMessage}
     </div>
-</c:if>
+  </c:if>
   </div>
   <div class="row">
     <div class="column">
@@ -215,8 +186,29 @@ body, html {
       </form>
     </div>
   </div>
+
+
+<div style="width: 100%; max-width: 1200px; margin: auto;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.514308672752!2d55.79824557445919!3d25.68739031167351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef60bd1073ccd9d%3A0xea79d074e236cc2f!2sGlobal%20Runflats!5e0!3m2!1sen!2sin!4v1739688171140!5m2!1sen!2sin" 
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 </div>
 
+<div class="hero-image1">
+  <div class="hero-text">
+    <h3 style="color:white; font-size: 46px;font-weight: bold ;border-left: 4px solid #d32f2f;" >Let's work together now</h3>
+    <!-- <a href="./getContactUs" style="color:red ;font-size: 28px;font-weight: bold ">Contact Us</a> -->
+    <button type="button" onclick="window.location.href='../getContactUs';" class="btn btn-danger btn-lg">
+                   Contact Us
+                </button>
+  </div>
+</div>
 <%@ include file="footer.jsp" %>
 
 <script>

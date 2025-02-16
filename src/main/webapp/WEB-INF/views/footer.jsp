@@ -49,14 +49,41 @@ Subfooter
   </div> -->
   
   <link rel="stylesheet" href="/css/styles.css">
+<style>
+#whatsapp-chat {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    /* background-color: #25D366; */
+   /*  padding: 40px; */
+   /*  border-radius: 50px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
 
+/* #whatsapp-button img {
+    width: 50px;
+    height: 50px;
+} */
+
+#whatsapp-text {
+    bold:black;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+</style>
 <footer id="footer">
   <div class="footer-container">
     <div class="footer-row">
       
       <!-- Left Column: Company Info -->
       <div class="footer-col">
-        <h3>Global Runflats FZ LLC</h3>
+        <h3>Global Runflats System</h3>
         <p class="footer-text">
           Global Runflats System is an industry-leading specialist, custom RUNFLAT insert manufacturer based out of Ras Al Khaimah, UAE.
         </p>
@@ -104,12 +131,24 @@ Subfooter
 
     </div>
   </div>
+  
+  
+  <!-- WhatsApp Chat Button -->
+<div id="whatsapp-chat">
+     
+    <a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=+971544235049&text=Hello" 
+        target="_blank" rel="nofollow" aria-label="WhatsApp Chat Button">
+        <img src="/image/whatsapp.png" alt="WhatsApp Chat" style="width: 70px;height: 70px;">
+    </a>
+    <span id="whatsapp-text" style="background-color: white;padding: 5px;border-radius: 5px;box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);gap: 30px;">Need Help?</span>
+</div>
+  
 </footer>
 
 <!-- Subfooter -->
 <div id="footer_coms">
   <div class="footer-message">
-    Copyright &copy; 2024 Global Runflats FZ LLC | All Rights Reserved
+    Copyright &copy; 2024 Global Runflats System | All Rights Reserved
   </div>
 </div>
 
